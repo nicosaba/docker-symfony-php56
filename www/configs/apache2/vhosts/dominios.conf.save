@@ -1,0 +1,10 @@
+	ServerName perinatal.local
+
+	ServerAdmin webmaster@localhost
+	DocumentRoot /var/www/html/perinatal/web
+
+	ErrorLog /var/www/perinatal-error.log
+	CustomLog /var/www/perinatal-access.log combined
+</VirtualHost>
+
+

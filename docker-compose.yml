@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web_56:
+    restart: always
+    build:
+      context: dockerfiles/php56
+    volumes:
+      - /home/proyectos/${nombre}/www/:/var/www/html
+      - /home/proyectos/${nombre}/www/configs/apache2/vhosts:/etc/apache2/from-host
+    expose:
+      - "80"
+    ports:
+      - ${port}:80
