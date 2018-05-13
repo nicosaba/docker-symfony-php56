@@ -8,7 +8,6 @@ RUN apt-get install -y software-properties-common
 RUN LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
 RUN apt-get update
 RUN apt-get -y install nano
-RUN apt-get -y install composer
 
 RUN apt-get install -y php5.6
 RUN apt-get install -y php5.6-mbstring
